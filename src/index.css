@@ -1,0 +1,104 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.App {
+  width: 400px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 20px;
+  border: 1px rgb(30, 25, 36) solid;
+  text-align: center;
+  background-color: rgb(252, 210, 73);
+  font-family:Arial, Helvetica, sans-serif;
+  padding-bottom: 20px;
+}
+
+h1 {
+  font-weight: bold;
+}
+
+.form {
+  width: 100%;
+}
+
+.form input {
+  width: 60%;
+  font-family:Arial, Helvetica, sans-serif;
+  outline-color: rgb(17, 197, 197);
+  border: 0;
+}
+
+.form button {
+  color: rgb(250, 247, 73);
+  background-color: rgb(14, 187, 43);
+  border: 0;
+  margin-left: 3px;
+}
+
+.todo {
+  display: flex;
+  flex-direction: row;
+  border: 1px solid rgb(126, 114, 114);
+  width: 85%;
+  padding: 5px;
+  border-radius: 5px;
+  
+}
+
+.todo_list div:not(:last-child) {
+  margin-bottom: 5px;
+}
+
+.todo li {
+  width: 150px;
+  overflow: hidden;
+}
+
+.todo button {
+  position: relative;
+  left: 30%;
+  margin-right: 5px;
+  background-color: rgb(17, 197, 197);
+  border: 0;
+}
+
+.completed {
+  text-decoration: line-through;
+  opacity: 0.5;  
+}
+
+.todo_control{
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 14px;
+  border: 1px rgb(30, 25, 36) solid;
+  padding: 5px;
+  border-radius: 10px;
+  background-color: rgb(212, 235, 235);
+  width: 80%;
+}
+.todo_control button {
+  margin-left: 5px;
+  padding: 10px;
+  background-color: rgb(17, 197, 197);
+  border: 0;
+  border-radius: 5px;
+}
+
+button:hover {
+  transform: scale(1.1);
+  transition: all 200ms ease-in-out;
+}
